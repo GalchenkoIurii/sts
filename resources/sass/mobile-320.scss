@@ -1,0 +1,52 @@
+@import 'fonts';
+@import 'vars';
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.header {
+  &__wrapper {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  &__link {
+    img {
+      max-width: 100px;
+    }
+  }
+}
+
+.menu {
+  &__btn {
+    width:40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $color-main-white;
+    border: none;
+    position: relative;
+    &::after {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: $color-main-black;
+      position: absolute;
+      top: 14px;
+      left: 10px;
+      box-shadow: 0 6px 0 0 $color-main-black, 0 12px 0 0 $color-main-black;
+    }
+  }
+}

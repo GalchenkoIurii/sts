@@ -11,3 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.styles('resources/css/reset.css', 'public/css/reset.css');
+mix.sass('resources/sass/mobile-320.scss', 'public/css')
+    .sass('resources/sass/mobile-425.scss', 'public/css')
+    .sass('resources/sass/tablet-768.scss', 'public/css')
+    .sass('resources/sass/desktop-1024.scss', 'public/css')
+    .sass('resources/sass/desktop-1440.scss', 'public/css');

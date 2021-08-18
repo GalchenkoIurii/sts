@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'vars';
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.container {
+  padding: 0 20px;
+}

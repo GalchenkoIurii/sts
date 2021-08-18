@@ -17,16 +17,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'index'])
     ->name('home');
-Route::get('/portfolio', [MainController::class, 'portfolio'])
-    ->name('portfolio');
-Route::get('/blog', [MainController::class, 'blog'])
-    ->name('blog');
-Route::get('/contacts', [MainController::class, 'contacts'])
-    ->name('contacts');
 Route::get('/about', [MainController::class, 'about'])
     ->name('about');
+Route::get('/blog', [MainController::class, 'blog'])
+    ->name('blog');
 Route::get('/careers', [MainController::class, 'careers'])
     ->name('careers');
+Route::get('/contacts', [MainController::class, 'contacts'])
+    ->name('contacts');
+Route::get('/news', [MainController::class, 'news'])
+    ->name('news');
+Route::get('/portfolio', [MainController::class, 'portfolio'])
+    ->name('portfolio');
 
 
 /*
