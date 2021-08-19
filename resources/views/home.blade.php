@@ -7,7 +7,9 @@
 @endsection
 
 @section('content')
-    <div>Content</div>
+    <section>
+
+    </section>
 @endsection
 
 @section('footer')

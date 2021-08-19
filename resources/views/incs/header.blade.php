@@ -3,7 +3,7 @@
         <div class="header__wrapper">
             <div class="logo">
                 <a href="{{ route('home') }}" class="logo__link">
-                    <img src="{{ asset('img/logo1.svg') }}" alt="">
+                    <img src="{{ asset('img/logo2.svg') }}" alt="STS logo">
                 </a>
             </div>
             <nav class="menu">
