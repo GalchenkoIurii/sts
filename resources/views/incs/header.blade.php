@@ -6,9 +6,12 @@
                     <img src="{{ asset('img/logo2.svg') }}" alt="STS logo">
                 </a>
             </div>
-            <nav class="menu">
-                <button class="menu__btn"></button>
-            </nav>
+            <div class="menu">
+                <button id="mobileMenuOpen" class="menu__btn"></button>
+            </div>
         </div>
     </div>
 </header>
+<div id="mobileMenu" class="mobile-menu-layout">
+    <button id="mobileMenuClose" class="mobile-menu-layout__btn"></button>
+</div>
