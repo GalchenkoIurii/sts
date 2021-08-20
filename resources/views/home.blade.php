@@ -13,5 +13,5 @@
 @endsection
 
 @section('footer')
-    <div>Footer</div>
+    @include('incs.footer')
 @endsection
