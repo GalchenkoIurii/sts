@@ -8,7 +8,7 @@ class MainController extends Controller
 {
     public function index()
     {
-        echo 'home';
+        return view('home');
     }
 
     public function about()
@@ -29,6 +29,11 @@ class MainController extends Controller
     public function contacts()
     {
         echo 'contacts';
+    }
+
+    public function news()
+    {
+        echo 'news';
     }
 
     public function portfolio()
