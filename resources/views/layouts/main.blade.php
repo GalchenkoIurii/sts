@@ -14,9 +14,14 @@
 <body>
 
 @yield('header')
-@yield('content')
+
+<main>
+    @yield('content')
+</main>
+
 @yield('footer')
 
+<script defer src="{{ asset('js/main.js') }}"></script>
 @yield('scripts')
 </body>
 </html>
