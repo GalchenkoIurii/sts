@@ -11,12 +11,12 @@
                 <nav class="menu__nav">
                     <ul class="">
                         <li><a href="{{ route('home') }}">Home</a></li>
-                        <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                        <li><a href="{{ route('blog') }}">Blog</a></li>
+                        {{--<li><a href="{{ route('portfolio') }}">Portfolio</a></li>--}}
+                        {{--<li><a href="{{ route('blog') }}">Blog</a></li>--}}
                         <li><a href="{{ route('contacts') }}">Contacts</a></li>
                         <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('careers') }}">Careers</a></li>
-                        <li><a href="{{ route('news') }}">News</a></li>
+                        {{--<li><a href="{{ route('news') }}">News</a></li>--}}
                     </ul>
                 </nav>
             </div>
@@ -32,12 +32,12 @@
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="{{ route('home') }}">Home</a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="{{ route('portfolio') }}">Portfolio</a>
-            </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="{{ route('blog') }}">Blog</a>
-            </li>
+            {{--<li class="mobile-menu__item">--}}
+                {{--<a class="mobile-menu__link" href="{{ route('portfolio') }}">Portfolio</a>--}}
+            {{--</li>--}}
+            {{--<li class="mobile-menu__item">--}}
+                {{--<a class="mobile-menu__link" href="{{ route('blog') }}">Blog</a>--}}
+            {{--</li>--}}
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="{{ route('contacts') }}">Contacts</a>
             </li>
@@ -47,9 +47,9 @@
             <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="{{ route('careers') }}">Careers</a>
             </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="{{ route('news') }}">News</a>
-            </li>
+            {{--<li class="mobile-menu__item">--}}
+                {{--<a class="mobile-menu__link" href="{{ route('news') }}">News</a>--}}
+            {{--</li>--}}
         </ul>
     </nav>
 </div>
