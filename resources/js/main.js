@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
             if (mobileMenu) {
                 mobileMenu.setAttribute("data-open", true);
+                mobileMenuOpen.style.display = "none";
             }
         });
     }
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
             if (mobileMenu && mobileMenu.hasAttribute("data-open")) {
                 mobileMenu.removeAttribute("data-open");
+                mobileMenuOpen.style.display = "";
             }
         });
     }

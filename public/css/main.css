@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/PTSans-Regular.woff2?c18e49837ffaabb55df287c34e051f57) format("woff2"), url(/fonts/PTSans-Regular.woff?3df41f1d26f9bc9819bf8c48e78c17ac) format("woff");
+}
+@font-face {
+  font-family: "PTSans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/PTSans-Bold.woff2?f10092b0f70c8f1e363d3ca987690050) format("woff2"), url(/fonts/PTSans-Bold.woff?2259f7eef1af6879017448d39b39738b) format("woff");
+}
+@font-face {
+  font-family: "PTSans-Italic";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/PTSans-Italic.woff2?52322815056188b6d559e39a8d02a0dc) format("woff2"), url(/fonts/PTSans-Italic.woff?832d1d98c4724028754a1f35b0b991b0) format("woff");
+}
+@font-face {
+  font-family: "PTSans-BoldItalic";
+  font-style: italic;
+  font-weight: 700;
+  src: url(/fonts/PTSans-BoldItalic.woff2?8aa048203d5cc5b3b25485da2a0e6118) format("woff2"), url(/fonts/PTSans-BoldItalic.woff?f9df444353eeeb4f8bf062267531841f) format("woff");
+}
+@font-face {
+  font-family: "PTSerif";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/PTSerif-Regular.woff2?9fd027afd9e4be1101c5fc319f11b2da) format("woff2"), url(/fonts/PTSerif-Regular.woff?312159028447a272b278002a86b851ae) format("woff");
+}
+@font-face {
+  font-family: "PTSerif-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/PTSerif-Bold.woff2?f7f588e942ac49251700aacca81fdc2f) format("woff2"), url(/fonts/PTSerif-Bold.woff?5fc18010d58d97668c0eabc9d362efad) format("woff");
+}
+@font-face {
+  font-family: "PTSerif-Italic";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/PTSerif-Italic.woff2?a459a2136cf1f172263705df298c489d) format("woff2"), url(/fonts/PTSerif-Italic.woff?deae2bb4680349901133a498237d9faf) format("woff");
+}
+@font-face {
+  font-family: "PTSerif-BoldItalic";
+  font-style: italic;
+  font-weight: 700;
+  src: url(/fonts/PTSerif-BoldItalic.woff2?78a50be0cb79666a6b8458b55ff99e93) format("woff2"), url(/fonts/PTSerif-BoldItalic.woff?336dd45a8c9f2151fb42f103184e1907) format("woff");
+}
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: PTSans, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #4c4c4c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+a {
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.header__wrapper {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__link img {
+  max-width: 100px;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  position: relative;
+}
+.menu__btn::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  box-shadow: 0 6px 0 0 #000, 0 12px 0 0 #000;
+}
+.menu__nav {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateX(-100vw);
+  transition: transform 200ms ease-in-out;
+}
+.mobile-menu[data-open] {
+  transform: translateX(0);
+}
+.mobile-menu__btn-wrapper {
+  min-height: 80px;
+  margin-bottom: 30px;
+}
+.mobile-menu__btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.mobile-menu__btn::before, .mobile-menu__btn::after {
+  content: "";
+  width: 2px;
+  height: 28px;
+  background-color: #000;
+  position: absolute;
+  top: 7px;
+  left: 19px;
+}
+.mobile-menu__btn::before {
+  transform: rotate(45deg);
+}
+.mobile-menu__btn::after {
+  transform: rotate(-45deg);
+}
+.mobile-menu__nav {
+  text-align: center;
+}
+.mobile-menu__item {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+.mobile-menu__link {
+  width: 100%;
+}
